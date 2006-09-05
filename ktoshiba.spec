@@ -2,7 +2,7 @@ Summary:	KToshiba
 Summary(pl):	KToshiba
 Name:		ktoshiba
 Version:	0.9
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/ktoshiba/%{name}-%{version}.tar.bz2
@@ -49,6 +49,9 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
