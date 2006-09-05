@@ -1,3 +1,5 @@
+%bcond_without	synaptics	# don't build synaptics support
+
 Summary:	KToshiba
 Summary(pl):	KToshiba
 Name:		ktoshiba
@@ -11,7 +13,7 @@ URL:		http://ktoshiba.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
-BuildRequires:	libsynaptics-devel
+%{?with_synaptics:BuildRequires: libsynaptics-devel}
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,7 +34,8 @@ cp -f /usr/share/automake/config.sub admin
 	--enable-libsuffix=64 \
 %endif
 	--%{?debug:en}%{!?debug:dis}able-debug%{?debug:=full} \
-	--with-qt-libraries=%{_libdir}
+	--with-qt-libraries=%{_libdir} \
+	--with%{!?with_synaptics:out}-libsynaptics
 %{__make}
 
 %install
