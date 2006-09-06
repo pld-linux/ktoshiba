@@ -4,7 +4,7 @@ Summary:	KToshiba
 Summary(pl):	KToshiba
 Name:		ktoshiba
 Version:	0.9
-Release:	0.2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/ktoshiba/%{name}-%{version}.tar.bz2
