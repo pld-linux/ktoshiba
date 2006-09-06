@@ -20,7 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Battery Monitor and Fn-Key support for Toshiba laptops.
 
-#%description -l pl
+%description -l pl
+Monitor baterii oraz wsparcie dla skrótów klawiszowych Fn-X w
+laptopach Toshiba.
 
 %prep
 %setup -q
