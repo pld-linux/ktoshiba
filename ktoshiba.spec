@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/ktoshiba/%{name}-%{version}.tar.bz2
 URL:		http://ktoshiba.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	dbus-qt-devel >= 0.62
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 %{?with_synaptics:BuildRequires: libsynaptics-devel}
 BuildRequires:	rpmbuild(macros) >= 1.129
