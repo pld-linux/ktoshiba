@@ -1,7 +1,9 @@
+#
+# Conditional build:
 %bcond_without	synaptics	# don't build synaptics support
-
-Summary:	KToshiba
-Summary(pl):	KToshiba
+#
+Summary:	KToshiba - Battery Monitor and Fn-Key support for Toshiba laptops
+Summary(pl):	KToshiba - monitor baterii i obs³uga klawisza Fn dla laptopów Toshiby
 Name:		ktoshiba
 Version:	0.9
 Release:	1
@@ -22,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Battery Monitor and Fn-Key support for Toshiba laptops.
 
 %description -l pl
-Monitor baterii oraz wsparcie dla skrótów klawiszowych Fn-X w
-laptopach Toshiba.
+Monitor baterii oraz obs³uga skrótów klawiszowych Fn-X w laptopach
+Toshiby.
 
 %prep
 %setup -q
@@ -66,10 +68,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/kde3/kcm_ktoshibam.la
 %attr(755,root,root) %{_libdir}/kde3/kcm_ktoshibam.so
 %{_libdir}/libktoshibaprocinterface.la
-%attr(755,root,root) %{_libdir}/libktoshibaprocinterface.so.0.0.0
+%attr(755,root,root) %{_libdir}/libktoshibaprocinterface.so.*.*.*
 %{_libdir}/libktoshibasmminterface.la
-%attr(755,root,root) %{_libdir}/libktoshibasmminterface.so.0.0.0
+%attr(755,root,root) %{_libdir}/libktoshibasmminterface.so.*.*.*
 %{_datadir}/autostart/ktoshiba.desktop
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_iconsdir}/*/*/apps/%{name}.png
 %{_datadir}/apps/%{name}
