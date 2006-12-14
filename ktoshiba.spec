@@ -71,7 +71,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libktoshibaprocinterface.so.*.*.*
 %{_libdir}/libktoshibasmminterface.la
 %attr(755,root,root) %{_libdir}/libktoshibasmminterface.so.*.*.*
+%{_libdir}/libktoshibaomnibookinterface.la
+%attr(755,root,root) %{_libdir}/libktoshibaomnibookinterface.so.*.*.*
+%{_datadir}/applications/kde/%{name}*.desktop
 %{_datadir}/autostart/ktoshiba.desktop
-%{_desktopdir}/*.desktop
 %{_iconsdir}/*/*/apps/%{name}.png
 %{_datadir}/apps/%{name}
