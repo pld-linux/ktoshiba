@@ -3,7 +3,7 @@
 %bcond_without	synaptics	# don't build synaptics support
 #
 Summary:	KToshiba - Battery Monitor and Fn-Key support for Toshiba laptops
-Summary(pl):	KToshiba - monitor baterii i obs≥uga klawisza Fn dla laptopÛw Toshiby
+Summary(pl.UTF-8):   KToshiba - monitor baterii i obs≈Çuga klawisza Fn dla laptop√≥w Toshiby
 Name:		ktoshiba
 Version:	0.10
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Battery Monitor and Fn-Key support for Toshiba laptops.
 
-%description -l pl
-Monitor baterii oraz obs≥uga skrÛtÛw klawiszowych Fn-X w laptopach
+%description -l pl.UTF-8
+Monitor baterii oraz obs≈Çuga skr√≥t√≥w klawiszowych Fn-X w laptopach
 Toshiby.
 
 %prep
