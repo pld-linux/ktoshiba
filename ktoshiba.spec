@@ -6,7 +6,7 @@ Summary:	KToshiba - Battery Monitor and Fn-Key support for Toshiba laptops
 Summary(pl.UTF-8):	KToshiba - monitor baterii i obsługa klawisza Fn dla laptopów Toshiby
 Name:		ktoshiba
 Version:	0.11
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/ktoshiba/%{name}-%{version}.tar.bz2
